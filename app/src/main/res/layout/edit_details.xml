@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDetails">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bootom_navigation"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    <include layout="@layout/title"
+        android:id="@+id/title_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></include>
+
+    <include layout="@layout/user_info_box"
+        android:id="@+id/user_info_box"
+        android:layout_below="@id/title_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <EditText
+
+        android:id="@+id/text_edit_street"
+        android:inputType="textPostalAddress"
+        android:hint="Enter New Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_info_box"
+        ></EditText>
+    <EditText
+
+        android:id="@+id/text_edit_city"
+        android:inputType="textPostalAddress"
+        android:hint="Enter New City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_edit_street"
+        ></EditText>
+    <EditText
+
+        android:id="@+id/text_edit_postcode"
+        android:inputType="textPostalAddress"
+        android:hint="Enter New Postcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_edit_city"
+        ></EditText>
+    <EditText
+        android:id="@+id/text_edit_phone_number"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:layout_below="@id/text_edit_postcode"></EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_edit_phone_number"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/left_button"/>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/right_button"/>
+    </LinearLayout>
+</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

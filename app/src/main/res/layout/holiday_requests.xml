@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bootom_navigation"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <include layout="@layout/title"
+        android:id="@+id/title_template"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+
+    <include layout="@layout/holiday_request_box"
+        android:id="@+id/holiday_request_box1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_template">
+    </include>
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/holiday_request_box1"
+        android:text="STATUS PENDING"
+        android:textAlignment="center"
+        android:background="@color/right_button">
+    </TextView>
+
+    <include layout="@layout/holiday_request_box"
+        android:id="@+id/holiday_request_box2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_status">
+    </include>
+    <TextView
+        android:id="@+id/text_status2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/holiday_request_box2"
+        android:text="STATUS AGREED"
+        android:textAlignment="center"
+        android:background="@color/purple_200">
+    </TextView>
+
+    <include layout="@layout/holiday_request_box"
+        android:id="@+id/holiday_request_box3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_status2">
+    </include>
+    <TextView
+        android:id="@+id/text_status3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/holiday_request_box3"
+        android:text="STATUS CANCELLED"
+        android:textAlignment="center"
+        android:background="@color/left_button">
+    </TextView>
+
+
+</RelativeLayout>

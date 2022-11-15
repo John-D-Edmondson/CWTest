@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CWTest</string>
+    <string name="button_clear">CLEAR</string>
+    <string name="button_edit">EDIT</string>
+    <string name="button_login">LOGIN</string>
+    <string name="text_username">USERNAME</string>
+    <string name="text_password">PASSWORD</string>
+    <string name="dummy_name">Jimmy Smith</string>
+    <string name="dummy_phone_number">077777777777</string>
+    <string name="dummy_address">12 Streety Street \n Plymouth \n PL4 5AA </string>
+    <string name="dummy_hols_remaining">27</string>
+    <string name="holiday_remaining">Holiday Allowance remaining</string>
+    <string name="holiday_request_button">View holiday requests</string>
+    <string name="holiday_request_text">Holiday Request</string>
+    <string name="date_from">Date from</string>
+    <string name="date_to">Date to</string>
+    <string name="button_request_holiday">MAKE REQUEST</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

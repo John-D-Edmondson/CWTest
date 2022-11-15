@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/holiday_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/outliner"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/text_holiday_remaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/holiday_remaining"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/number_holiday_remaining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_hols_remaining"
+            android:textSize="40dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

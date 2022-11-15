@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bootom_navigation"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_nav"
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <include layout="@layout/title"
+        android:id="@+id/title_template"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </include>
+    <include layout="@layout/user_info_box"
+        android:id="@+id/user_info_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_template">
+    </include>
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_edit"
+            android:layout_below="@id/user_info_box"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/right_button"
+            />
+
+        <include layout="@layout/holiday_allowance_box"
+            android:id="@+id/holiday_box"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/button_edit">
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holiday_box"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_clear"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/left_button"/>
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_login"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/right_button"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
